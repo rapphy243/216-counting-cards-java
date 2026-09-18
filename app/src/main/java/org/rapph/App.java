@@ -15,5 +15,22 @@ public class App {
       for (int i = 0; i < shuffledArray.length; i++) {
         System.out.print(shuffledArray[i] + " ");
       }
+      System.out.println();
+
+      shuffledArray = Shuffle.optimizedCopyShuffle(shuffledArray);
+
+      System.out.println("Shuffled again: ");
+      for (int i = 0; i < shuffledArray.length; i++) {
+        System.out.print(shuffledArray[i] + " ");
+      }
+      System.out.println();
+
+      Shuffle.inPlaceShuffle(shuffledArray);
+
+      System.out.println("Shuffled again: ");
+      for (int i = 0; i < shuffledArray.length; i++) {
+        System.out.print(shuffledArray[i] + " ");
+      }
+      System.out.println();
     }
 }

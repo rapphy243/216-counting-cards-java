@@ -20,7 +20,8 @@ public class Shuffle {
     return shuffledArray;
   }
 
-  public static int[] optimizedCopyShuffle(int[] array) {
+  public static int[] optimizedCopyShuffle(int[] arr) {
+    int[] array = arr.clone();
     int[] shuffledArray = new int[array.length];
 
     int n = 0;
